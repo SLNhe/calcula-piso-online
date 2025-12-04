@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calculadora online de piso argamassa e rejunte">
+    <title>CalculaPiso Online</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsivo.css">
+</head>
+
+<body>
+
+    <div class="img">
+        <img src="img/calc.png" alt="calculadora">
+    </div>
+
+    <h1>Calculadora de Piso - Argamassa - Rejunte</h1>
+    <h2>Calcule peças, argamassa e rejunte em segundos</h2>
+
+   <!--Entrada de dados-->
+    <div class="dados">
+
+        <!--Dados do Ambiente-->
+        <div class="dadosAmbiente">
+            <div class="largura ambiente">
+                <p>Largura Ambiente (m)</p>
+                <input id="larguraAmbiente" type="number" placeholder="Ex 4.50">
+            </div>
+            
+            <div class="comprimento ambiente">
+                <p>Comprimento Ambiente (m)</p>
+                <input id="comprimentoAmbiente" type="number" placeholder="Ex 3.50">
+            </div>            
+        </div>
+
+        <!--Dados piso-->
+        <div class="dadosPiso">
+            <h2 class="titulo">Tamanho do Piso</h2>
+            <div class="largura piso">
+                <p>Largura Piso (cm)</p>
+                <input id="larguraPiso" type="number" placeholder="Ex: 50">
+            </div>
+            
+            <div class="comprimento piso">
+                <p>Comprimento Piso (cm)</p>
+                <input id="comprimentoPiso" type="number" placeholder="Ex: 50">
+            </div>            
+        </div>
+
+        <!--Outros dados-->
+        <div class="outrosDados">
+            <div class="perda estimada">
+                <p>Perda estimada (%)</p>
+                <input id="perda" type="number" value="5">
+            </div>
+            
+            <div class="consumo argamassa">
+                <p>Consumo argamassa (kg/m²)</p>
+                <input id="consumoArgamassa" type="number" value="4.5">
+            </div>            
+            
+            <div class="tamanho rejunte">
+                <p>Tamanho do rejunte (mm)</p>
+                <input id="tamanhoRejunte" type="number" value="2">
+            </div>                
+        </div>
+
+    </div>
+
+    <!--Botoes-->
+    
+    <div class="enviar">
+        <button class="btn" id="enviar">Calcular</button>
+        <button class="btn" id="limpar">Limpar</button>
+    </div>
+
+    <!--Resultado-->
+
+    <div id="resultadoConta" class="resultado">
+        <!-- <h2> Resultados </h2>
+
+        <div class="resultadoAmbiente">
+            <h3>Ambiente</h3> 
+            <p>Area do ambiente: 20m²</p>
+        </div>
+        
+        <div class="resultadoPiso">
+            <h3>Quantidade de Pisos</h3>
+            <p>Quantidade necessaria: 30 unidades</p> 
+            <p>Quantidade necessaria com perda estimada: 45 unidades</p>
+        </div>
+        
+        <div class="resultadoArgamassa">
+            <h3>Quantidade de Argamassa</h3>
+            <p>Quantidade necessaria em Kg: 40kg</p> 
+            <p>Quantidade de pacotes de 20kg: 2 pacotes</p>
+        </div>
+        
+        <div class="resultadoRejunte">
+            <h3>Rejunte</h3>
+            <p>Quantidade de Rejunte: 5kg</p> 
+        </div> -->
+        
+    </div>
+
+
+
+
+
+    <!-- CONTEUDO TXT-->
+    
+    <section style="max-width: 800px; margin: 40px auto; line-height: 1.7;">
+    <h2>Calculadora de Piso, Argamassa e Rejunte</h2>
+    <p>
+        Use a calculadora acima para planejar sua obra e evitar desperdícios. 
+        Ela ajuda você a descobrir rapidamente quantos metros quadrados de piso comprar, 
+        além do consumo estimado de argamassa e rejunte de acordo com a área que deseja revestir.
+    </p>
+
+    <h3>Como Usar a Calculadora</h3>
+    <ul>
+        <li>Informe a largura e o comprimento do ambiente.</li>
+        <li>A ferramenta calcula automaticamente a área total em m².</li>
+        <li>Inclui uma margem de segurança para recortes e perdas.</li>
+        <li>Exibe a quantidade total de piso, argamassa e rejunte recomendada.</li>
+    </ul>
+
+    <h3>Por Que Fazer o Cálculo Antes de Comprar?</h3>
+    <p>
+        Comprar piso sem calcular pode gerar problemas comuns:
+    </p>
+    <ul>
+        <li><strong>Comprar pouco:</strong> o lote pode acabar e o próximo ter variação de cor.</li>
+        <li><strong>Comprar demais:</strong> você perde dinheiro e sobra material na obra.</li>
+    </ul>
+    <p>
+        Com o cálculo correto, você economiza tempo, evita erros e mantém seu orçamento sob controle.
+    </p>
+
+    <h3>Dicas Para Escolher o Piso Ideal</h3>
+    <ul>
+        <li>Para áreas molhadas, prefira pisos antiderrapantes.</li>
+        <li>Em salas e quartos, pisos polidos trazem mais brilho.</li>
+        <li>Pisos maiores exigem menos rejunte e ficam mais uniformes.</li>
+        <li>Verifique sempre a indicação de uso (PEI, resistência, etc.).</li>
+    </ul>
+
+    <h3>Perguntas Frequentes</h3>
+
+    <p><strong>1. Preciso adicionar perdas?</strong><br>
+        Sim! A calculadora já faz isso automaticamente para garantir precisão.
+    </p>
+
+    <p><strong>2. A estimativa funciona para qualquer tipo de piso?</strong><br>
+        Sim! Funciona para porcelanato, cerâmica, piso vinílico e até laminado.
+    </p>
+
+    <p><strong>3. A calculadora funciona no celular?</strong><br>
+        Sim! Ela é totalmente responsiva e funciona em qualquer dispositivo.
+    </p>
+
+    <h3>Ferramenta Gratuita</h3>
+    <p>
+        Esta calculadora foi criada para ajudar no planejamento da sua obra ou reforma 
+        de forma rápida e prática. Use quantas vezes quiser — é gratuita e sempre atualizada.
+    </p>
+
+    <hr style="margin: 30px 0;">
+
+    <p>
+        <strong>Contato:</strong> heusser.solin@gmail.com<br>
+        <strong>Desenvolvido por:</strong> Sôlin Heusser © 2025<br>
+        <a href="https://zuhause.arq.br/politica-de-privacidade/" style="color: #007BFF;">Política de Privacidade</a>
+    </p>    
+</section>
+
+
+
+
+
+
+<!--RODAPÉ-->
+<div class="rodape">
+    <p> Feito por Sôlin Heusser -ZuhauseModernDesign   <a href="https://zuhause.arq.br/politica-de-privacidade/">Politica de Privacidade</a></p> 
+    
+</div>
+
+
+<script src="control.js"></script>
+
+</body>
+
+</html>
